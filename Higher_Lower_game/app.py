@@ -36,7 +36,7 @@ for _ in range(100):
     if foll == 'a' and follower_A > follower_B:
         i += 1
         print(f"You're right! Current score: {i}")
-    elif foll == 'b' and follower_B > follower_A:
+    elif foll =='b' and follower_B > follower_A:
         i += 1
         print(f"You're right! Current score: {i}")
     else:
