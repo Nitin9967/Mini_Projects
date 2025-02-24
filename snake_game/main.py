@@ -28,6 +28,10 @@ while game_is_on:
     if S.snake[0].xcor()>290 or S.snake[0].ycor()>290 or S.snake[0].xcor()<-290 or S.snake[0].ycor()<-290:
         game_is_on = False
         Score.game_over()
+    for segment in S.snake[1:]:
+        if S.snake[0].distance(segment)<10:
+            game_is_on = False
+            Score.game_over()
 
 
 

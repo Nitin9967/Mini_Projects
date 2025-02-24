@@ -13,10 +13,12 @@ class Snake:
              self.new_part(position)
     def new_part(self,pos):
         new_part = Turtle()
+        new_part.hideturtle()
         new_part.penup()
         new_part.shape("square")
         new_part.color("white")
         new_part.goto(pos)
+        new_part.showturtle()
         self.snake.append(new_part)
 
     def move(self):
