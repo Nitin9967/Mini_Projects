@@ -15,7 +15,7 @@ def get_state_name():
 guessed_states = []
 while len(guessed_states) < 50:
     name = get_state_name()
-    if name is None:
+    if name ==  "Exit" :
         break
 
     if name in guessed_states:
@@ -34,5 +34,13 @@ while len(guessed_states) < 50:
         t.write(name, align="center", font=("Arial", 12, "normal"))
     else:
         print("Invalid state name.")
+Unguessed_names = []
+for names in guessed_states:
+    for state in data["state"]:
+        if names == state:
+            pass
+        else:
+            Unguessed_names.append(state)
+print(Unguessed_names)
 
 s.exitonclick()
