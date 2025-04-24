@@ -42,6 +42,4 @@ for names in guessed_states:
         else:
             Unguessed_names.append(state)
 print(Unguessed_names)
-
-
 s.exitonclick()
